@@ -1,1 +1,6 @@
-lesson1/lesson1/lesson1.csproj/ 
+lesson1/.vs 
+lesson1/lesson1/bin/
+lesson1/lesson1/obj/
+lesson1/lesson1/Properties/
+lesson1/lesson1/App.config
+lesson1/lesson1/lesson1.csproj
