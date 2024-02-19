@@ -8,34 +8,31 @@ namespace lesson2
 {
      class Exercise3
     {
-        string[] english = new string[10] {"hot", 
-                                          "warm", 
-                                          "cold", 
-                                          "sunny", 
-                                          "cloudy", 
-                                          "rain", 
-                                          "snow", 
-                                          "thunder", 
-                                          "frost", 
-                                           "fog"};
-        string[] russian = new string[10] {"жарко", 
-                                           "тепло", 
-                                           "холодно", 
-                                           "солнечно", 
-                                           "облачно", 
-                                           "дождь", 
-                                           "снег", 
-                                           "туман", 
-                                           "мороз", 
-                                           "туман"};
+        Dictionary<string, string> dictionary;
 
-        public string Dictionary(string word)
+        public Exercise3()
         {
-            for (int i = 0; i < english.Length; i++)
+            dictionary = new Dictionary<string, string>()
             {
-                if (russian[i] == word)
-                { 
-                    return english[i]; 
+                ["жарко"] = "hot",
+                ["тепло"] = "warm",
+                ["холодно"] = "cold",
+                ["солнечно"] = "sunny",
+                ["облачно"] = "cloudy",
+                ["дождь"] = "rain",
+                ["снег"] = "snow",
+                ["гром"] = "thunder",
+                ["мороз"] = "frost",
+                ["туман"] = "fog"
+            };
+        }
+        public string Search(string word)
+        {
+            foreach (var item in dictionary)
+            {
+                if (item.Key == word)
+                {
+                    return item.Value;  
                 }
             }
             return null;

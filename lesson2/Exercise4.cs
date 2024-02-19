@@ -8,28 +8,21 @@ namespace lesson2
 {
     class Exercise4
     {
-        int n;
+        int number;
 
-        public Exercise4(int m) { n = m; }
+        public Exercise4(int number) { this.number = number; }
 
-        public Exercise4() { n = 0; }
+        public Exercise4() { number = 0; }
 
-        public bool method1()
+        public bool SearchOnDiv()
         {
-            if (n % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (number % 2 == 0);
         }
 
-        public bool method2()
+        public bool SearchOnLetter()
         {
-            string number = Convert.ToString(n);
-            char symbol = number[number.Length - 1];
+            string number1 = Convert.ToString(number);
+            char symbol = number1[number1.Length - 1];
             if (symbol == '0' || symbol == '2'|| symbol == '4' || symbol == '6' || symbol == '8')
             {
                 return true;

@@ -17,7 +17,7 @@ namespace lesson2
             operand2 = 9;   
         }
 
-        public double Solve(string sign)
+        public double Calculator(string sign)
         {
             switch(sign)
             {

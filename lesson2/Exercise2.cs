@@ -14,7 +14,7 @@ namespace lesson2
 
         public Exercise2(int m) { n = m; }
 
-        public string Check()
+        public string Interval()
         {
             if (n >= 0 && n <= 14)
             {
@@ -34,7 +34,7 @@ namespace lesson2
             }
             else
             {
-                Console.WriteLine("Ошибка: число не входит ни в один из числовых промежутков!");
+                Console.WriteLine("Error: the number is not included in any of the numeric gaps!");
                 return null;
             }
         }
