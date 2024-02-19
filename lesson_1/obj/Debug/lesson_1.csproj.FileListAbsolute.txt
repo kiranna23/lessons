@@ -1,7 +1,0 @@
-D:\Lessons\lesson_1\lesson_1\bin\Debug\lesson_1.exe.config
-D:\Lessons\lesson_1\lesson_1\bin\Debug\lesson_1.exe
-D:\Lessons\lesson_1\lesson_1\bin\Debug\lesson_1.pdb
-D:\Lessons\lesson_1\lesson_1\obj\Debug\lesson_1.csproj.AssemblyReference.cache
-D:\Lessons\lesson_1\lesson_1\obj\Debug\lesson_1.csproj.CoreCompileInputs.cache
-D:\Lessons\lesson_1\lesson_1\obj\Debug\lesson_1.exe
-D:\Lessons\lesson_1\lesson_1\obj\Debug\lesson_1.pdb
