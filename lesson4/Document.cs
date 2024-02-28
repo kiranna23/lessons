@@ -37,14 +37,20 @@ namespace lesson4
         public static void OutLetters(string document)
         {
             string[] words = SplitStr(document);
-            Console.WriteLine(words[1].ToLower() + "/" + words[3].ToLower() + "/" + Char.ToLower(words[4][1]) + "/" + Char.ToLower(words[4][3]));
+            Console.WriteLine(words[1].ToLower() + 
+                "/" + words[3].ToLower() + 
+                "/" + Char.ToLower(words[4][1]) + 
+                "/" + Char.ToLower(words[4][3]));
         }
 
         public static void OutDocument(string document)
         {
             string[] words = SplitStr(document);
             StringBuilder myStringBuilder = new StringBuilder("Letters:");
-            myStringBuilder.Append(words[1].ToUpper() + "/" + words[3].ToUpper() + "/" + Char.ToUpper(words[4][1]) + "/" + Char.ToUpper(words[4][3]));
+            myStringBuilder.Append(words[1].ToUpper() + 
+                "/" + words[3].ToUpper() + 
+                "/" + Char.ToUpper(words[4][1]) + 
+                "/" + Char.ToUpper(words[4][3]));
             Console.WriteLine(myStringBuilder);
         }
 
