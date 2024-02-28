@@ -57,7 +57,10 @@ namespace lesson4
         public static bool IncludeABC(string document)
         {
             string[] words = SplitStr(document);
-            return (words[1].Contains("abc") || words[1].Contains("ABC") || words[3].Contains("abc") || words[3].Contains("ABC"));
+            return (words[1].Contains("abc") || 
+                words[1].Contains("ABC") || 
+                words[3].Contains("abc") || 
+                words[3].Contains("ABC"));
         }
 
         public static bool IncludeNumbers(string document)
