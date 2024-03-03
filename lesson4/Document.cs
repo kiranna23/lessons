@@ -8,15 +8,16 @@ namespace lesson4
 {
     class Document
     {
-        public static string[] SplitStr(string document)
+        public static string[] SplitString(string document)
         {
             char sign = '-';
             string[] words = document.Split(sign);
             return words;   
         }
+
         public static void BlockNumbers (string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             string FirstBlock = words[0];
             string SecondBlock = words[2];
             Console.WriteLine(FirstBlock + " " + SecondBlock);
@@ -24,7 +25,7 @@ namespace lesson4
 
         public static void ReplaceLetter(string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             string FirstBlock = words[1];
             string SecondBlock = words[3];
             string correctString = document.Replace(FirstBlock, "***");
@@ -36,7 +37,7 @@ namespace lesson4
 
         public static void OutLetters(string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             Console.WriteLine(words[1].ToLower() + 
                 "/" + words[3].ToLower() + 
                 "/" + Char.ToLower(words[4][1]) + 
@@ -45,7 +46,7 @@ namespace lesson4
 
         public static void OutDocument(string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             StringBuilder myStringBuilder = new StringBuilder("Letters:");
             myStringBuilder.Append(words[1].ToUpper() + 
                 "/" + words[3].ToUpper() + 
@@ -56,7 +57,7 @@ namespace lesson4
 
         public static bool IncludeABC(string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             return (words[1].Contains("abc") || 
                 words[1].Contains("ABC") || 
                 words[3].Contains("abc") || 
@@ -65,14 +66,14 @@ namespace lesson4
 
         public static bool IncludeNumbers(string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             string line = words[0].Substring(0,3);
             return (line == "555");
         }
 
         public static bool IncludeCombination(string document)
         {
-            string[] words = SplitStr(document);
+            string[] words = SplitString(document);
             return (words[4] == "1a2b");
         }
     }

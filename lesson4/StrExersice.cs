@@ -51,16 +51,7 @@ namespace lesson4
             words = correctString;  
             for(int i = 0; i < words.Length; i++)
             {
-                if (words[i]== '0' ||
-                    words[i] == '1' ||
-                    words[i] == '2' || 
-                    words[i] == '3' || 
-                    words[i] == '4' || 
-                    words[i] == '5' ||
-                    words[i] == '6' ||
-                    words[i] == '7' ||
-                    words[i] == '8' ||
-                    words[i] == '8' )
+                if (words[i] >= '0' && words[i] <= '9')
                 {
                     words = words.Remove(i, 1);
                 }
